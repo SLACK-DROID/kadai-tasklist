@@ -54,3 +54,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Install 'kaminari'
 gem 'kaminari'
+
+# heroku setting
+group :production do
+  gem 'pg'
+end
