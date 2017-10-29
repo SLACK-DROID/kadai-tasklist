@@ -15,7 +15,7 @@ class TasksController < ApplicationController
     @task = Task.new(task_params)
     
     if @task.save
-      flash[:sucess] = 'Task が正常に保存されました'
+      flash[:success] = 'Task が正常に保存されました'
       redirect_to @task
     else
       flash.now[:danger] = 'Task が保存されませんでした'
